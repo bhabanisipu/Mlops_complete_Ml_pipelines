@@ -24,7 +24,7 @@ logger.addHandler(console_handler)
 logger.addHandler(file_handler)
 
 def load_data(data_url:str) ->pd.DataFrame:
-    """"load the data from a csv file"""
+    """load the data from a csv file"""
     try:
         df = pd.read_csv(data_url)
         logger.debug('Data loaded from %s',data_url)
